@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.notepad.NotepadController">
+   <top>
+      <MenuBar fx:id="menuBar" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu fx:id="file" mnemonicParsing="false" text="Plik">
+            <items>
+              <MenuItem fx:id="open" mnemonicParsing="false" onAction="#onMenuItemOpenClick" text="Otwórz" />
+                  <MenuItem fx:id="save" mnemonicParsing="false" onAction="#onMenuItemSaveClick" text="Zapisz" />
+                  <MenuItem fx:id="close" mnemonicParsing="false" onAction="#onMenuItemQuitClick" text="Zamknij" />
+            </items>
+          </Menu>
+          <Menu fx:id="edit" mnemonicParsing="false" text="Edycja">
+            <items>
+              <MenuItem fx:id="delete" mnemonicParsing="false" onAction="#onMenuItemDeleteClick" text="Skasuj Zawartość" />
+                  <MenuItem fx:id="cipher" mnemonicParsing="false" onAction="#onMenuItemCipherClick" text="Zaszyfruj" />
+                  <MenuItem fx:id="decipher" mnemonicParsing="false" onAction="#onMenuItemDelcipherClick" text="Odszyfruj" />
+            </items>
+          </Menu>
+          <Menu fx:id="help" mnemonicParsing="false" text="Pomoc">
+            <items>
+              <MenuItem fx:id="about" mnemonicParsing="false" onAction="#onMenuItemAboutClick" text="O programie" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <TextArea fx:id="textArea" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
