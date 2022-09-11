@@ -18,7 +18,7 @@
             <items>
               <MenuItem fx:id="delete" mnemonicParsing="false" onAction="#onMenuItemDeleteClick" text="Skasuj Zawartość" />
                   <MenuItem fx:id="cipher" mnemonicParsing="false" onAction="#onMenuItemCipherClick" text="Zaszyfruj" />
-                  <MenuItem fx:id="decipher" mnemonicParsing="false" onAction="#onMenuItemDelcipherClick" text="Odszyfruj" />
+                  <MenuItem fx:id="decipher" mnemonicParsing="false" onAction="#onMenuItemDecipherClick" text="Odszyfruj" />
             </items>
           </Menu>
           <Menu fx:id="help" mnemonicParsing="false" text="Pomoc">

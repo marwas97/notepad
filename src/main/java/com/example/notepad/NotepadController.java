@@ -67,7 +67,8 @@ public class NotepadController {
     @FXML
     protected void onMenuItemCipherClick() {
         textArea.setText("");
-    }@FXML
+    }
+    @FXML
     protected void onMenuItemDecipherClick() {
         textArea.setText("");
     }
